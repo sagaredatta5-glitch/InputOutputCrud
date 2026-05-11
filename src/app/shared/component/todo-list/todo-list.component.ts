@@ -23,7 +23,7 @@ export class TodoListComponent implements OnInit {
 let config = new MatDialogConfig()
 config.width='400 px',
 config.disableClose = true,
-config.data = 'Are you shure delete todo'
+config.data = 'Are you sure delete todo'
 let confignew = this._matdialog.open(GetconformComponent,config)
 confignew.afterClosed()
 .subscribe(isconform=>{
