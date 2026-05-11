@@ -1,0 +1,16 @@
+
+<div class="card mt-5">
+    <div class="card-body">
+        <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between" *ngFor="let todo of gettodo">
+      <span>  {{todo.tdodItem}} </span>
+      <div>
+        <button class="btn btn-outline-primary" (click)="onedit(todo)">Edit</button>
+        <button 
+        (click)="onRemove(todo.todoId)"
+        class="btn btn-outline-danger ml-3">Delete</button>
+      </div>
+    </li>
+</ul>
+    </div>
+</div>

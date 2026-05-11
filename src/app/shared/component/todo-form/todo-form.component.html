@@ -1,0 +1,29 @@
+
+
+<div class="card mt-5">
+    <h1 class="text-center">{{isinEditmode ? 'Update Todo' : 'Add Todo'}}</h1>
+    <div class="card-body">
+        
+<div class="form-group">
+    <label for="todoItem">TodoItem</label>
+    <input type="text" class="form-control" #TodoItem>
+</div>
+
+<div class="form-group">
+    <label for="iscomplate">iscomplate</label>
+    <select type="text"  class="form-control" #iscomplet>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+</div>
+<button 
+(click)="onaddtodo()"
+*ngIf="!isinEditmode"
+class="btn-block btn-outline-primary" >Add Todo</button>
+<button 
+(click)="onupdate()"
+*ngIf="isinEditmode"
+class="btn-block btn-outline-danger" >Update Todo</button>
+
+    </div>
+</div>

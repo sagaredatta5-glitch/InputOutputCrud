@@ -1,0 +1,12 @@
+
+<p>{{getmsg || 'Are you shure'}} </p>
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between">
+            <button class="mr-3" mat-raised-button color="primary" (click)="onclick(true)">Yes</button>
+            <button mat-raised-button color="accent" (click)="onclick(false)" >No</button>
+        </div>
+    </div>
+</div>
