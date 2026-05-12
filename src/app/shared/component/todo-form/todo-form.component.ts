@@ -14,6 +14,7 @@ isinEditmode : boolean=false
 @ViewChild('iscomplet') iscomplet !: ElementRef
 
 @Output() emitnewtodo :EventEmitter <Itodo> = new EventEmitter<Itodo>()
+
 @Output() emitnewtodoupdate :EventEmitter <Itodo> = new EventEmitter<Itodo>()
 
 

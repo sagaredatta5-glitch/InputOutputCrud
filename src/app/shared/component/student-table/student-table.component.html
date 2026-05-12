@@ -1,0 +1,43 @@
+
+<div class="card mt-5">
+    <div class="card-body">
+        <div class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>fname</th>
+                    <th>lname</th>
+                    <th>email</th>
+                    <th>contact</th>
+                    <th>isactive</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let stud of getstudent; index as i" >
+                    <td>{{i+1}}</td>
+                    <td>{{stud.fname}}</td>
+                    <td>{{stud.lname}}</td>
+                    <td>{{stud.email}}</td>
+                    <td>{{stud.contact}}</td>
+                    <td>{{stud.isactive ? 'Yes' : 'No'}}</td>
+                    <td>
+                        <button mat-mini-fab color="primary"
+                        (click)="onedit(stud)"
+                        >
+                            <mat-icon>edit</mat-icon>
+                        </button>
+
+                    </td>
+                    <td><button mat-mini-fab color="warn"
+                        (click)="onRemove(stud.stdId)"
+                        >
+                        <mat-icon>delete</mat-icon>
+                    </button></td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+</div>

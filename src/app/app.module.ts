@@ -8,6 +8,10 @@ import { TodoFormComponent } from './shared/component/todo-form/todo-form.compon
 import { TodoListComponent } from './shared/component/todo-list/todo-list.component';
 import { materialmodule } from './shared/material/material.module';
 import { GetconformComponent } from './shared/component/getconform/getconform.component';
+import { StudentDashbordComponent } from './shared/component/student-dashbord/student-dashbord.component';
+import { StudentFormComponent } from './shared/component/student-form/student-form.component';
+import { StudentTableComponent } from './shared/component/student-table/student-table.component';
+import { ObserversModule } from "@angular/cdk/observers";
 
 @NgModule({
   declarations: [
@@ -15,13 +19,17 @@ import { GetconformComponent } from './shared/component/getconform/getconform.co
     TodoDashbordComponent,
     TodoFormComponent,
     TodoListComponent,
-    GetconformComponent
+    GetconformComponent,
+    StudentDashbordComponent,
+    StudentFormComponent,
+    StudentTableComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    materialmodule
-  ],
+    materialmodule,
+    ObserversModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
