@@ -1,0 +1,28 @@
+
+<div class="card">
+    <h2 class="text-center bg-info">{{isinEditmode ? 'Update Movie' : 'Add Movie'}}</h2>
+    <div class="card-body">
+        <label for="MovieTitle"> Movie Title</label>
+        <input type="text" class="form-control" #title>
+    </div>
+    <div class="card-body">
+        <label for="img"> Movie ImgUrl</label>
+        <input type="text" class="form-control" #img>
+    </div>
+    <div class="card-body">
+        <label for="content"> Movie Content</label>
+        <input type="text" class="form-control" #content>
+
+        <button
+        (click)="onaddmovie()"
+        *ngIf="!isinEditmode"
+        class="btn-block btn-outline-primary mt-3">Add Movie</button>
+        <button
+        (click)="onupdate()"
+        *ngIf="isinEditmode"
+        class="btn-block btn-outline-danger">Update Movie</button>
+    </div>
+    
+        
+    
+</div>

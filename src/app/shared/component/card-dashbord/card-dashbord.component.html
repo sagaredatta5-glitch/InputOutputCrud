@@ -1,0 +1,10 @@
+
+<div class="row">
+    <div class="col-md-6 offset-3 mt-3">
+        <app-card-form (eventupdatemovie)="onupdate($event)" [getedit]="editobj" (eventaddmovie)="onaddmovie($event)"></app-card-form>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <app-card-list  (eventeditmovie)="onedit($event)" (eventremovemovie)="onremove($event)"  [getmovie]="moviecardarry"> </app-card-list>
+</div>

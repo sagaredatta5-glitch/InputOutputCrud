@@ -12,6 +12,9 @@ import { StudentDashbordComponent } from './shared/component/student-dashbord/st
 import { StudentFormComponent } from './shared/component/student-form/student-form.component';
 import { StudentTableComponent } from './shared/component/student-table/student-table.component';
 import { ObserversModule } from "@angular/cdk/observers";
+import { CardDashbordComponent } from './shared/component/card-dashbord/card-dashbord.component';
+import { CardFormComponent } from './shared/component/card-form/card-form.component';
+import { CardListComponent } from './shared/component/card-list/card-list.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { ObserversModule } from "@angular/cdk/observers";
     StudentDashbordComponent,
     StudentFormComponent,
     StudentTableComponent,
+    CardDashbordComponent,
+    CardFormComponent,
+    CardListComponent,
   ],
   imports: [
     BrowserModule,

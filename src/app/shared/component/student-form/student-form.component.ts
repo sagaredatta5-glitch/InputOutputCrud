@@ -62,8 +62,8 @@ if(this.fname.nativeElement.value.length > 0){
       email:this.email.nativeElement.value,
       contact:this.contact.nativeElement.value,
       stdId:this.getstdobj.stdId,
-      isactive:this.isactive.nativeElement.value==='true'
-      
+      isactive:this.isactive.nativeElement.value==='true' ? true : false
+
 
     }
     this.eventupdatestud.emit(updated_obj)
