@@ -35,7 +35,14 @@ TUCArray:Array<Ituc> =[{
   idnum:'4',
   LinkedinP:'https://media.licdn.com/dms/image/v2/D5603AQHxTMtd9WpieQ/profile-displayphoto-crop_800_800/B56Z4IdlNeGsAI-/0/1778258434770?e=1780531200&v=beta&t=M9vHDHcwpdWgnTDkDsJrQgG1BHgEyssZsiAdFp53U7I'
 },
-
+{
+  Name:'Rohit Yewale',
+  Course:'Angular Development',
+  Duration:'9 Months',
+  Trainer:'Ravi Sir',
+  idnum:'6',
+  LinkedinP:'https://media.licdn.com/dms/image/v2/D4D03AQGATAwQaWOCnA/profile-displayphoto-crop_800_800/B4DZ0Ew6tmGsAI-/0/1773901430574?e=1780531200&v=beta&t=ASPPl5bjhtY9GJSZh03cxLlWBaRCFKL4zZlA0KlpKz4'
+},
 ]
 
 
