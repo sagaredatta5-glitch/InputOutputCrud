@@ -43,6 +43,14 @@ TUCArray:Array<Ituc> =[{
   idnum:'6',
   LinkedinP:'https://media.licdn.com/dms/image/v2/D4D03AQGATAwQaWOCnA/profile-displayphoto-crop_800_800/B4DZ0Ew6tmGsAI-/0/1773901430574?e=1780531200&v=beta&t=ASPPl5bjhtY9GJSZh03cxLlWBaRCFKL4zZlA0KlpKz4'
 },
+{
+  Name:'Kapishwar Sambetwad ',
+  Course:'Angular Development',
+  Duration:'9 Months',
+  Trainer:'Ravi Sir',
+  idnum:'9',
+  LinkedinP:'https://media.licdn.com/dms/image/v2/D4E03AQGxB0nAXoedpA/profile-displayphoto-crop_800_800/B4EZlMKDAgKsAI-/0/1757919327642?e=1780531200&v=beta&t=8OYpCnIi_tBUlOiirw5oJtMpLA2sYp8akDbA3wt0bY4'
+},
 ]
 
 
