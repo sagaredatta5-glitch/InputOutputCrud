@@ -73,6 +73,6 @@ this.newmemberadd.emit(newmember)
       this.Duration.nativeElement.value=''
       this.Trainer.nativeElement.value=''
       this.LinkedinP.nativeElement.value=''
-      this._snackbar.opensnackbar('Member Update Successfully')
+      this._snackbar.opensnackbar('Member Update Successfully ')
   }
 }
