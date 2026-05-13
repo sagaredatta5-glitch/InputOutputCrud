@@ -24,7 +24,7 @@ export class TUCCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onremove(id:string){
+  onremove(stdid:string){
     // this.editmember.emit(id)
     let config = new MatDialogConfig()
     config.width='400 px',
@@ -34,7 +34,7 @@ export class TUCCardComponent implements OnInit {
     confignew.afterClosed()
     .subscribe(id=>{
       if(id){
-        this.removemember.emit(id)
+        this.removemember.emit(stdid)
       }
     })
 
