@@ -15,6 +15,9 @@ import { ObserversModule } from "@angular/cdk/observers";
 import { CardDashbordComponent } from './shared/component/card-dashbord/card-dashbord.component';
 import { CardFormComponent } from './shared/component/card-form/card-form.component';
 import { CardListComponent } from './shared/component/card-list/card-list.component';
+import { TUCDashbordComponent } from './shared/component/tuc-dashbord/tuc-dashbord.component';
+import { TUCCardComponent } from './shared/component/tuc-card/tuc-card.component';
+import { TUCFormComponent } from './shared/component/tuc-form/tuc-form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { CardListComponent } from './shared/component/card-list/card-list.compon
     CardDashbordComponent,
     CardFormComponent,
     CardListComponent,
+    TUCDashbordComponent,
+    TUCCardComponent,
+    TUCFormComponent,
   ],
   imports: [
     BrowserModule,

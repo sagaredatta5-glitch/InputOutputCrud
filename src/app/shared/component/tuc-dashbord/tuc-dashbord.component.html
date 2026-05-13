@@ -1,0 +1,12 @@
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6 offset-3">
+        <app-tuc-form (updatemember)="onupdate($event)" [geteditobj]="editobj" (newmemberadd)="onnewaddmem($event)"> </app-tuc-form>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <app-tuc-card (editmember)="onedit($event)" (removemember)="onremovemember($event)" [getTUCarr]="TUCArray" > </app-tuc-card>
+</div>

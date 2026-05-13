@@ -1,0 +1,41 @@
+
+
+    
+       <div class="card mt-4 bg-info">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" #Name>
+            </div>
+
+             <div class="form-group">
+                <label for="course">Course</label>
+                <input type="text" class="form-control" #Course>
+            </div>
+
+             <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="text" class="form-control" #Duration>
+            </div>
+
+             <div class="form-group">
+                <label for="trainer">Trainer</label>
+                <input type="text" class="form-control" #Trainer>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedinP">LinkedinP</label>
+                <input type="text" class="form-control" #LinkedinP>
+            </div>
+            <div>
+                <button
+                (click)="onAddMember()"
+                *ngIf="!isinEditmode"
+                class=" btn btn-block btn-outline-primary bg-warning">Add Member</button>
+                <button
+                (click)="onupdatemember()"
+                *ngIf="isinEditmode"
+                class=" btn btn-block btn-outline-danger  bg-warning">Update Member</button>
+            </div>
+        </div>
+</div>

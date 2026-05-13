@@ -1,8 +1,11 @@
 
 
 <div class="row">
-    <div class="col-md-4" *ngFor="let movie of getmovie">
-        <mat-card class="example-card">
+    <div class="col-md-4 mb-4"
+  
+    
+    *ngFor="let movie of getmovie">
+        <mat-card class="example-card h-100 ">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title> {{movie.moviename}}</mat-card-title>
@@ -13,13 +16,15 @@
       {{movie.content}}
     </p>
   </mat-card-content>
-  <mat-card-actions class="d-flex justify-content-between">
-    <button
+  <mat-card-actions >
+   <div class="d-flex justify-content-between">
+     <button
     (click)="onedit(movie)"
     mat-raised-button color="primary">Edit</button>
     <button
     (click)="onRemove(movie.movieId)"
     mat-raised-button color="warn" >Delete</button>
+   </div>
   </mat-card-actions>
 </mat-card>
 

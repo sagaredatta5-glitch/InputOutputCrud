@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="row">
+    
+        <div class="col-md-4 mt-4" *ngFor="let tuc of getTUCarr">
+            <mat-card class="example-card">
+  <mat-card-title-group>
+    <mat-card-title>{{tuc.Name}}</mat-card-title>
+    
+    <mat-card-subtitle class="mt-3">{{tuc.Course}}</mat-card-subtitle>
+    <hr>
+    
+    <img mat-card-md-image src={{tuc.LinkedinP}} class="ml-2">
+  </mat-card-title-group>
+  <h4>Trainer : {{tuc.Trainer}}</h4>
+  <p>{{tuc.Duration}} completed your Course</p>
+  <div class="d-flex justify-content-between">
+    <button
+    (click)="onedit(tuc)"
+    mat-raised-button color="primary">Edit</button>
+    <button
+    (click)="onremove(tuc.idnum)"
+    mat-raised-button color="warn">Delete</button>
+</div>
+</mat-card>
+
+        </div>
+    
+</div>
+</div>
